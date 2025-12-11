@@ -1,89 +1,30 @@
-/* Reset default margins and paddings */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Navbar brand */
+.navbar-brand {
+  font-weight: bold;
+  font-size: 22px;
 }
 
-/* Navbar container */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 70px;
-    background-color: #333;
-    padding: 0 20px;
-    color: white;
+/* Main heading */
+h1 {
+  margin-bottom: 40px;
+  margin-top: 10px;
 }
 
-/* Logo styling */
-.navbar .logo {
-    font-size: 24px;
-    font-weight: bold;
+/* Menu boxes */
+.box {
+  background: #f1f1f1;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
-/* Navigation links */
-.nav-links {
-    display: flex;
-    list-style: none;
-}
-
-/* Each link spacing */
-.nav-links li {
-    margin-left: 20px;
-}
-
-/* Links appearance */
-.nav-links a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    transition: color 0.3s;
-}
-
-/* Hover effect */
-.nav-links a:hover {
-    color: #ff6347; /* Tomato color on hover */
-}
-/* Hamburger menu hidden on large screens */
-.hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.hamburger span {
-    height: 3px;
-    width: 25px;
-    background: white;
-    margin-bottom: 4px;
-    border-radius: 5px;
-}
-
-/* Mobile view */
-@media (max-width: 768px) {
-    .hamburger {
-        display: flex;
-    }
-
-    .nav-links {
-        position: absolute;
-        top: 70px;
-        right: 0;
-        background: #333;
-        width: 200px;
-        height: 0;
-        overflow: hidden;
-        flex-direction: column;
-        transition: height 0.3s;
-    }
-
-    .nav-links.open {
-        height: 200px;
-    }
-
-    .nav-links li {
-        margin: 20px 0;
-        text-align: center;
-    }
+.section-title {
+  background: #ddd;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 15px;
+  border-radius: 4px;
 }
